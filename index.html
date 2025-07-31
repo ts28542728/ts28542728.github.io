@@ -1,36 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-  <title>It's Tanvir World</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanvir's World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #f3f4f6;
+      color: #111827;
+    }
+    header {
+      background: linear-gradient(to right, #1e3a8a, #3b82f6);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 50px;
+    }
+    header p {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      margin-bottom: 25px;
+      font-size: 34px;
+      color: #1e3a8a;
+    }
+    .skills, .projects, .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .progress-bar {
+      background: #d1d5db;
+      border-radius: 25px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    .progress {
+      height: 12px;
+      background-color: #3b82f6;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+    }
+    form button {
+      margin-top: 15px;
+      padding: 12px 24px;
+      background-color: #1e3a8a;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Tanvir's Digital World</h1>
+    <p>শিক্ষার্থী | প্রোগ্রামার | ফ্রিল্যান্সিংয়ে আগ্রহী</p>
+  </header>
 
-<!-- Header -->
-<header class="w3-container w3-red w3-center w3-padding-48">
-  <h1><strong>It's Tanvir World</strong></h1>
-  <p>Student | Learner | Future Web Developer</p>
-</header>
+  <section>
+    <h2>আমার সম্পর্কে</h2>
+    <p>হ্যালো! আমি তানভীর ইসলাম, মাগুরা পলিটেকনিক ইনস্টিটিউটের একজন শিক্ষার্থী। আমি ওয়েব ডেভেলপমেন্ট শিখছি এবং ফ্রিল্যান্সিং ও প্রোগ্রামিং-এ আগ্রহী। ভবিষ্যতে একজন দক্ষ ওয়েব ডেভেলপার হওয়ার স্বপ্ন দেখি।</p>
+  </section>
 
-<!-- About Section -->
-<section class="w3-container w3-padding-72" id="about">
-  <h2>About Myself</h2>
-  <p>Hello! I'm Tanvir Islam, a student of Magura Polytechnic Institute. I'm learning web development and interested in freelancing and programming.</p>
-</section>
+  <section>
+    <h2>যে স্কিলগুলো আমি শিখছি</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>HTML</h3>
+        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+      </div>
+      <div class="card">
+        <h3>CSS</h3>
+        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+      </div>
+      <div class="card">
+        <h3>JavaScript</h3>
+        <div class="progress-bar"><div class="progress" style="width: 60%"></div></div>
+      </div>
+      <div class="card">
+        <h3>Kali Linux</h3>
+        <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+      </div>
+    </div>
+  </section>
 
-<!-- Projects Section -->
-<section class="w3-container w3-padding-64 w3-light-grey" id="projects">
-  <h2>Tanvir's Project</h2>
-  <div class="w3-card w3-padding w3-margin-bottom">
-    <h3>Portfolio Website</h3>
-    <p>Built using HTML, W3.CSS, and GitHub Pages</p>
-  </div>
-</section>
+  <section>
+    <h2>আমার প্রোজেক্ট</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>HTML, CSS ও GitHub Pages ব্যবহার করে বানানো একটি ওয়েবসাইট।</p>
+      </div>
+      <div class="card">
+        <h3>Simple E-commerce UI</h3>
+        <p>বেসিক ই-কমার্স ডিজাইন HTML ও Bootstrap দিয়ে।</p>
+      </div>
+      <div class="card">
+        <h3>Student Management Template</h3>
+        <p>JavaScript দিয়ে বানানো ফর্ম যেটাতে শিক্ষার্থীদের ডেটা যোগ করা যায়।</p>
+      </div>
+    </div>
+  </section>
 
-<!-- Footer -->
-<footer class="w3-container w3-teal w3-center w3-padding-32">
-  <p>&copy; 2025 Tanvir Islam | Email: ti4245673@gmail.com</p>
-</footer>
+  <section>
+    <h2>আমি যেসব সার্ভিস দিতে পারি</h2>
+    <div class="services">
+      <div class="card">
+        <h3>ওয়েব ডিজাইন</h3>
+        <p>মডার্ন, রেসপন্সিভ এবং ক্লিন ওয়েব ডিজাইন তৈরি করা।</p>
+      </div>
+      <div class="card">
+        <h3>ফ্রিল্যান্সিং গাইড</h3>
+        <p>যারা একদম নতুন, তাদের জন্য ফাইভার ও আপওয়ার্ক শুরুর হেল্প।</p>
+      </div>
+      <div class="card">
+        <h3>Basic Website Fix</h3>
+        <p>তোমার ওয়েবসাইটে ছোট খাটো সমস্যা ফিক্স করে দেওয়া।</p>
+      </div>
+    </div>
+  </section>
 
+  <section>
+    <h2>যোগাযোগ করো</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="তোমার নাম" required>
+      <input type="email" name="email" placeholder="তোমার ইমেইল" required>
+      <textarea name="message" rows="5" placeholder="তোমার বার্তা লিখো" required></textarea>
+      <button type="submit">বার্তা পাঠাও</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; ২০২৫ তানভীর ইসলাম | ডেভেলপমেন্টের পথে এগিয়ে চলা</p>
+  </footer>
 </body>
 </html>
